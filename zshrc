@@ -13,6 +13,14 @@ ZSH_THEME="kendall"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias rake="noglob rake"
+alias hig="history | grep"
+alias jgrep="grep -r -n --color"
+alias hr="apachectl restart"
+alias gsu="git submodule update --init"
+alias ta="tmux attach -t"
+alias tn="tmux new -s"
+alias tls="tmux ls"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -41,3 +49,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/sbin:/Users/jkendall/.rvm/gems/ruby-1.9.3-p125/bin:/Users/jkendall/.rvm/gems/ruby-1.9.3-p125@global/bin:/Users/jkendall/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/jkendall/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin:/Users/jkendall/.rvm/bin
+export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
+export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
